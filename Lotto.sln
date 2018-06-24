@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lotto.Domain.Model", "Lotto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lotto.Test", "Lotto.Test\Lotto.Test.csproj", "{2699AA8A-FF22-46B2-A122-5AE2CBDDE31C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lotto.Repository", "Lotto.Repository\Lotto.Repository.csproj", "{F2CEEB0E-84BC-4DE3-BB39-15FA6FCE9D6C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lotto.Domain.Contant", "Lotto.Domain.Contant\Lotto.Domain.Contant.csproj", "{E853429D-08D0-41F2-86A5-EBBC75046809}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lottery.Domain.Factory", "Lottery.Domain.Factory\Lottery.Domain.Factory.csproj", "{87260A25-CD07-4BF3-9352-E912740A3DE0}"
@@ -29,10 +27,6 @@ Global
 		{2699AA8A-FF22-46B2-A122-5AE2CBDDE31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2699AA8A-FF22-46B2-A122-5AE2CBDDE31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2699AA8A-FF22-46B2-A122-5AE2CBDDE31C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F2CEEB0E-84BC-4DE3-BB39-15FA6FCE9D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2CEEB0E-84BC-4DE3-BB39-15FA6FCE9D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2CEEB0E-84BC-4DE3-BB39-15FA6FCE9D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2CEEB0E-84BC-4DE3-BB39-15FA6FCE9D6C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E853429D-08D0-41F2-86A5-EBBC75046809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E853429D-08D0-41F2-86A5-EBBC75046809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E853429D-08D0-41F2-86A5-EBBC75046809}.Release|Any CPU.ActiveCfg = Release|Any CPU

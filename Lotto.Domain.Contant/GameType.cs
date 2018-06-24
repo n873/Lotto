@@ -1,5 +1,8 @@
 ﻿namespace Lotto.Domain.Contant
 {
+    /// <summary>
+    /// GameType provide a list of constant GameType decriptions
+    /// </summary>
     public static class GameType
     {
         public const string SALotto = "SA Lotto";

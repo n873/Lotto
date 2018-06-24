@@ -1,5 +1,8 @@
 ﻿namespace Lotto.Domain.Contant
 {
+    /// <summary>
+    /// DivisionResult provides a list of division constant messages
+    /// </summary>
     public static class DivisionResult
     {
         public const string Division8 = "Winner - Division 8";

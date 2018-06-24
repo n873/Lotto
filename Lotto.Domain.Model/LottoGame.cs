@@ -5,6 +5,11 @@ using System.Linq;
 
 namespace Lotto.Domain.Model
 {
+    /// <summary>
+    /// LottoGame is the base type of all Lotto game types
+    /// LottoGame implements ILotto interface and its defined methods
+    /// The LottoGame declares CaptureDraw and allows overriding of the GetDivision logic
+    /// </summary>
     public abstract class LottoGame : ILotto
     {
         protected int[] _Draw;
