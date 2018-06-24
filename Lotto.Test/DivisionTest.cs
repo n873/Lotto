@@ -13,7 +13,7 @@ namespace Lotto.Test
         public DivisionTest()
         {
             lottoInstance = Lottery.Domain.Factory.GameFactory.Get(GameType.SALotto, "2018-06-06");
-            var randomDraw = LotteryUtility.GenerateNumbers();
+            var randomDraw = LottoUtility.GenerateNumbers();
             lottoInstance.CaptureDraw(randomDraw);
             randomSelection = new int[7];
             randomDraw.CopyTo(randomSelection, 0);

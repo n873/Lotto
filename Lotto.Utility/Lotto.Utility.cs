@@ -6,7 +6,7 @@ namespace Lotto.Utility
     /// <summary>
     /// LotteryUtility generates a random selection of Lottery draw numbers
     /// </summary>
-    public static class LotteryUtility
+    public static class LottoUtility
     {
         public static int[] GenerateNumbers()
         {

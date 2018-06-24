@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lotto.Test", "Lotto.Test\Lo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lotto.Domain.Contant", "Lotto.Domain.Contant\Lotto.Domain.Contant.csproj", "{E853429D-08D0-41F2-86A5-EBBC75046809}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lottery.Domain.Factory", "Lottery.Domain.Factory\Lottery.Domain.Factory.csproj", "{87260A25-CD07-4BF3-9352-E912740A3DE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lotto.Domain.Factory", "Lotto.Domain.Factory\Lotto.Domain.Factory.csproj", "{87260A25-CD07-4BF3-9352-E912740A3DE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lotto.Utility", "LottoUtility\Lotto.Utility.csproj", "{CEA3132D-A1F1-4203-8FE2-A6F1714694CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lotto.Utility", "Lotto.Utility\Lotto.Utility.csproj", "{CEA3132D-A1F1-4203-8FE2-A6F1714694CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
