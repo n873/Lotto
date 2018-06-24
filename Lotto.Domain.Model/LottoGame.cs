@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Lotto.Domain.Contant;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Lotto.Domain.Model
@@ -6,6 +8,14 @@ namespace Lotto.Domain.Model
     public abstract class LottoGame : ILotto
     {
         protected int[] _Draw;
+        private readonly string _GameType;
+        private readonly string _DrawDate;
+
+        public LottoGame(string gameType, string drawDate)
+        {
+            _GameType = gameType;
+            _DrawDate = drawDate;
+        }
 
         public void CaptureDraw(params int[] draw)
         {
@@ -19,20 +29,37 @@ namespace Lotto.Domain.Model
             catch (Exception) { throw; }
         }
 
-        public abstract string GetDivision(params int[] draw);
-    }
-
-    public static class LotteryUtility
-    {
-        public static int[] GenerateNumbers()
+        public virtual string GetDivision(params int[] draw)
         {
-            var random = new Random();
-            var lottoNumbers = Enumerable
-                .Range(1, 52)
-                .OrderBy(x => random.Next())
-                .Take(7)
-                .ToArray();
-            return lottoNumbers;
+            try
+            {
+                List<int> matches;
+                if (draw != null && draw.Length > 0)
+                    matches = _Draw.Where(_drawItem => draw.Any(drawItem => _drawItem == drawItem)).ToList();
+                else
+                    throw new Exception("Cant get division for an empty lotto game");
+
+                if (matches != null && matches.Count > 0)
+                {
+                    switch (matches.Count)
+                    {
+                        case 3:
+                            return DivisionResult.Division7;
+                        case 4:
+                            return DivisionResult.Division5;
+                        case 5:
+                            return DivisionResult.Division3;
+                        case 6:
+                            return DivisionResult.Division1;
+                        default:
+                            break;
+                    }
+                }
+                return DivisionResult.NoDivision;
+            }
+            catch (Exception) { throw; }
         }
     }
+
+    
 }

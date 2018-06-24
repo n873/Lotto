@@ -13,4 +13,9 @@
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lottery.Domain.Factory\Lottery.Domain.Factory.csproj" />
+    <ProjectReference Include="..\Lotto.Domain.Model\Lotto.Domain.Model.csproj" />
+  </ItemGroup>
+
 </Project>
