@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Lottery.Domain.Factory\Lottery.Domain.Factory.csproj" />
     <ProjectReference Include="..\Lotto.Domain.Model\Lotto.Domain.Model.csproj" />
+    <ProjectReference Include="..\LottoUtility\Lotto.Utility.csproj" />
   </ItemGroup>
 
 </Project>

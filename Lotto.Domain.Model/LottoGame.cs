@@ -41,7 +41,28 @@ namespace Lotto.Domain.Model
 
                 if (matches != null && matches.Count > 0)
                 {
-                    switch (matches.Count)
+                    var matchesCount = matches.Count;
+                    if (_Draw.Length > 6)
+                    {
+                        var bonusMatch = matches.Any(number => number == _Draw[6]);
+
+                        if (bonusMatch)
+                            switch (matchesCount)
+                            {
+                                case 3:
+                                    return DivisionResult.Division8;
+                                case 4:
+                                    return DivisionResult.Division6;
+                                case 5:
+                                    return DivisionResult.Division4;
+                                case 6:
+                                    return DivisionResult.Division2;
+                                default:
+                                    break;
+                            }
+                    }
+
+                    switch (matchesCount)
                     {
                         case 3:
                             return DivisionResult.Division7;
@@ -61,5 +82,5 @@ namespace Lotto.Domain.Model
         }
     }
 
-    
+
 }
