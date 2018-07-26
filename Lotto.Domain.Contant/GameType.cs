@@ -1,7 +1,7 @@
 ﻿namespace Lotto.Domain.Contant
 {
     /// <summary>
-    /// GameType provide a list of constant GameType decriptions
+    /// GameType provide a list of constant GameType descriptions
     /// </summary>
     public static class GameType
     {
